@@ -1,0 +1,18 @@
+/* assets/style.css */
+
+/*
+  Questo selettore CSS prende di mira i link (<a>)
+  che hanno la classe .active e si trovano dentro un componente
+  con la classe .navbar-dark (la nostra navbar).
+*/
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: white !important; /* Rende il testo bianco */
+    font-weight: bold !important; /* Mette il testo in grassetto */
+    border-bottom: 2px solid white; /* Aggiunge una sottolineatura bianca */
+}
+
+.navbar-dark .navbar-nav .nav-link:not(.active):hover {
+    color: rgba(255, 255, 255, 0.85) !important; /* Rende il testo leggermente più chiaro */
+    transition: color 0.2s ease-in-out; /* Aggiunge una transizione fluida */
+}
