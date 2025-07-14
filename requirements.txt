@@ -1,0 +1,6 @@
+# requirements.txt
+dash
+dash-bootstrap-components
+pandas
+numpy
+plotly

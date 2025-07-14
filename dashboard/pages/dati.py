@@ -85,7 +85,6 @@ def aggiorna_tabella_dati(nome_tabella_selezionata):
     if df.empty:
         return dbc.Alert(f"La tabella '{nome_tabella_selezionata}' è vuota o non esiste.", color="warning")
 
-    # DataTable è un componente potente che gestisce da solo paginazione, filtri e ordinamento
     return DataTable(
         id='tabella-dati-visualizzata',
         # I dati devono essere passati come lista di dizionari
